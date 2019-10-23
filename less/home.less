@@ -2,7 +2,7 @@
   
    display: flex;
   // background-image:  url(/BuildWeek/img/HEADER\ LAYOUT23@3x.png);
-  background-image:  url(/Marketing-page-Mucteba/img/header-bg-large.png);
+  background-image:  url(/img/header-bg-large.png);
   //background: purple; 
   padding:50px;
    text-align: center;
@@ -10,13 +10,26 @@
    align-items: center;
    color:white;
     // height: 150%;
-    height: 645px;
+    
    font-family: 'Oswald', sans-serif;
   
    justify-content: flex-start;
   border-radius: 0 0 85% 85% / 1000%;
     
-  @media @mobile {
+  
+
+@media @tablet {
+    padding:30px;
+    font-size: 5px;
+    border-radius: 0 0 0 0 / 1000%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 55px;
+    align-items: center;
+    height: 1045px;
+}
+@media @mobile {
     padding:90px;
     font-size: 45px;
     border-radius: 0 0 0 0 / 1000%;
@@ -25,8 +38,8 @@
     text-align: center;
     font-size: 55px;
     align-items: center;
+    height: 645px;
 }
-  
 
 .phLOGIN{
     @media @mobile {
@@ -53,11 +66,20 @@
     margin-bottom: 32px;
     box-shadow: 0 3px 20px 0 #0000003b;
 
+  
+
+    @media @tablet {
+        font-size: 17px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      
+    }
+
     @media @mobile {
         font-size: 17px;
         margin-bottom: 15px;
         margin-top: 15px;
-       
+        
     }
 
 
@@ -79,6 +101,7 @@
         padding: 5px;
     
     }
+    
 
 
     .phApple{
@@ -201,10 +224,10 @@
 .commentSection{
     display: flex;
   
-    font-size: 40px;
+    font-size: 70px;
     flex-wrap: wrap;
    justify-content: space-between;
-   padding:60px;
+   padding:50px;
 
     height: 650px;
     align-items: center;
@@ -227,15 +250,10 @@
         height: 650px;
         padding:10px;
        
-    
-      
-       
-       
-    
     }
 
 section{
-    padding:60px;
+    padding:40px;
     border-left: 6px solid @Purple;
   //background-color: white;
   color:@Pink2;
@@ -245,12 +263,15 @@ background-image:
 
 linear-gradient(#eee .1em, transparent .1em);
 background-size: 100% 1.2em;
+@media @tablet {
+    padding:20px;
 
+   }
 @media @mobile {
     padding:20px;
 
    }
-
+   
 
 
 }

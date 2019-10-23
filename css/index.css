@@ -167,6 +167,11 @@ p {
 .nav_bar img {
   padding-left: 300px;
 }
+@media (max-width: 800px) {
+  .nav_bar img {
+    padding-left: 50px;
+  }
+}
 @media (max-width: 500px) {
   .nav_bar img {
     padding-left: 10px;
@@ -194,6 +199,11 @@ p {
   margin-right: 95px;
   box-shadow: 0 3px 20px 0 #0000003b;
 }
+@media (max-width: 800px) {
+  .nav_bar .navSignBtn {
+    margin-right: 15px;
+  }
+}
 @media (max-width: 500px) {
   .nav_bar .navSignBtn {
     margin-right: 5px;
@@ -220,16 +230,28 @@ footer img {
 }
 .introHeader {
   display: flex;
-  background-image: url(/Marketing-page-Mucteba/img/header-bg-large.png);
+  background-image: url(/img/header-bg-large.png);
   padding: 50px;
   text-align: center;
   font-size: 55px;
   align-items: center;
   color: white;
-  height: 645px;
   font-family: 'Oswald', sans-serif;
   justify-content: flex-start;
   border-radius: 0 0 85% 0.085%;
+}
+@media (max-width: 800px) {
+  .introHeader {
+    padding: 30px;
+    font-size: 5px;
+    border-radius: 0 0 0 0%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 55px;
+    align-items: center;
+    height: 1045px;
+  }
 }
 @media (max-width: 500px) {
   .introHeader {
@@ -241,6 +263,7 @@ footer img {
     text-align: center;
     font-size: 55px;
     align-items: center;
+    height: 645px;
   }
 }
 @media (max-width: 500px) {
@@ -268,6 +291,13 @@ footer img {
   font-size: 18px;
   margin-bottom: 32px;
   box-shadow: 0 3px 20px 0 #0000003b;
+}
+@media (max-width: 800px) {
+  .introHeader .signUpButton {
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 }
 @media (max-width: 500px) {
   .introHeader .signUpButton {
@@ -385,10 +415,10 @@ footer img {
 }
 .commentSection {
   display: flex;
-  font-size: 40px;
+  font-size: 70px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 60px;
+  padding: 50px;
   height: 650px;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
@@ -409,13 +439,18 @@ footer img {
   }
 }
 .commentSection section {
-  padding: 60px;
+  padding: 40px;
   border-left: 6px solid #37145B;
   color: #c64b8c;
   box-shadow: 0 3px 20px 0 #0000003b;
   background-color: #f5f5f5;
   background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
   background-size: 100% 1.2em;
+}
+@media (max-width: 800px) {
+  .commentSection section {
+    padding: 20px;
+  }
 }
 @media (max-width: 500px) {
   .commentSection section {
