@@ -35,10 +35,14 @@
           <button class="signUpButton"   >Sign Up </button>
       </form>
         <div class="storesBadge">
-          <img src="img/applestore.png" class="phApple" alt="TripSplit Logo">
-          <img src="img/google-play-badge.png" class="phGoogle" alt="TripSplit Logo">
+          <img src="img/applestore.png"  class="phApple" alt="TripSplit Logo" onclick="myFunction('Apple App')" >
+          <img src="img/google-play-badge.png" class="phGoogle" alt="TripSplit Logo" onclick="myFunction('Google Play')">
         </div>
-
+        <script>
+          function myFunction(brand) {
+            alert(`Coming soon to ${brand} Store!`);
+          }
+          </script>
       </div>
       <!-- <img src="img/phoneLogIn.png" class="phLOGIN" alt="TripSplit Logo">  -->
       <img src="img/header-iphone.png" class="phLOGIN" alt="TripSplit Logo">
